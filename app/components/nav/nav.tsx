@@ -1,26 +1,41 @@
-"use client"
-import "./nav.css"
-function Nav(){
+"use client";
+import "./nav.css";
+import Link from "next/link";
 
-    return (
-        <nav className="nav">
-            <a href="#" className="hover">
-                Discover
-                </a>
-                    <a href="#" className="hover">
-                        Travelling
-                            </a>
-                                <a href="#" className="hover">
-                                    Electronics
-                                            </a>
-                                            <a href="#" className="hover">
-                                                Clothing
-                                                    </a>
-                                                        <a href="#" className="hover">
-                                                                Support
-                                                                    </a>
-                                                                        </nav>
-        
-    )
+function Nav() {
+  const toggleMobileNav = (event) => {
+    console.log("clikc");
+    event.preventDefault();
+
+    const mobileNav = document.querySelector(".mobile");
+    mobileNav?.classList.toggle("show-mobile");
+    console.log(mobileNav);
+  };
+
+  return (
+    <nav className="nav">
+      <div className="mobile-toggle" onClick={toggleMobileNav}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className="mobile">
+        <Link href="#">Discover</Link>
+        <Link href="#">Travelling</Link>
+        <Link href="#">Electronics</Link>
+        <Link href="#">Clothing</Link>
+        <Link href="#">Support</Link>
+      </div>
+
+      <div className="desktop">
+        <Link href="#">Discover</Link>
+        <Link href="#">Travelling</Link>
+        <Link href="#">Electronics</Link>
+        <Link href="#">Clothing</Link>
+        <Link href="#">Support</Link>
+      </div>
+    </nav>
+  );
 }
-export default Nav
+export default Nav;
