@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import Nav from './components/nav/nav'
 import './globals.css'
-
-
+import Background from './components/background/background'
 
 export const metadata: Metadata = {
   title: 'Price Checker',
@@ -17,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Nav></Nav>
+        <Background></Background>
           {children} 
       </body>
     </html>

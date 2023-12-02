@@ -2,9 +2,10 @@
 import "./nav.css";
 import Link from "next/link";
 
+
 function Nav() {
   const toggleMobileNav = (event) => {
-    console.log("clikc");
+    
     event.preventDefault();
 
     const mobileNav = document.querySelector(".mobile");
@@ -14,7 +15,7 @@ function Nav() {
 
   return (
     <nav className="nav">
-      <div className="mobile-toggle" onClick={toggleMobileNav}>
+      <div className="mobile-toggle transition" onClick={toggleMobileNav}>
         <span></span>
         <span></span>
         <span></span>
