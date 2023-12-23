@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import Nav from './components/nav/nav'
 import './globals.css'
-
-
+import Nav from './components/nav/nav'
+import Hero from './components/hero/hero'
 
 export const metadata: Metadata = {
   title: 'Price Checker',
@@ -17,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <span></span>
         <Nav></Nav>
+        <Hero></Hero>
           {children} 
       </body>
     </html>
