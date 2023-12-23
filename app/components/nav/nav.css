@@ -32,6 +32,7 @@ a{
     color: black;
     margin: 50px 0px 0px 50px;
     font-size: 20px;
+    transition: all 0.5s linear; 
 }
 
 .mobile-toggle {
@@ -45,6 +46,10 @@ a{
     background-color: transparent;
 }
 
+.mobile-toggle-open {
+
+}
+
 .mobile-toggle span {
     height: 7px;
     width: 100%;
@@ -52,6 +57,37 @@ a{
     background-color: #fff;
     margin-bottom: 3px;
 }
+
+.mobile-toggle-open .first,
+.mobile-toggle-open .middle,
+.mobile-toggle-open .last {
+    height: 7px;
+    width: 100%;
+    display: block;
+    background-color: #222;
+    margin-bottom: 3px;
+    transition: all .25s linear ;
+}
+
+.mobile-toggle-open .middle {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mobile-toggle-open .first {
+    rotate: -45deg;
+}
+
+.mobile-toggle-open .last {
+    rotate: 45deg;
+    translate: 0 -20px;
+}
+
+
+
+
+
+
 
 .show-mobile{
     display: flex;

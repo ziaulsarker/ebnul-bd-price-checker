@@ -9,12 +9,12 @@ function Nav(props) {
   return (
     <nav className="nav">
       <div
-        className="mobile-toggle transition"
+        className={`mobile-toggle ${isOpen && "mobile-toggle-open"}`}
         onClick={() => toggleMobileNav(!isOpen)}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className="first"></span>
+        <span className="middle"></span>
+        <span className="last"></span>
       </div>
 
       <div className={`mobile ${isOpen ? "show-mobile" : ""}`}>
