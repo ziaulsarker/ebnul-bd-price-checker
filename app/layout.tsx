@@ -1,26 +1,27 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import Nav from './components/nav/nav'
-import Hero from './components/hero/hero'
+"use client";
+// import type { Metadata } from "next";
+import "./globals.css";
+import Nav from "./components/nav/nav";
+import Hero from "./components/hero/hero";
 
-export const metadata: Metadata = {
-  title: 'Price Checker',
-  description: 'Dont get scammed on your next visit to bangladesh',
-}
+import { useEffect, useState } from "react";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
+
   return (
     <html lang="en">
       <body>
-        <span></span>
-        <Nav></Nav>
-        <Hero></Hero>
-          {children} 
+        <Nav isOpen={isMobileOpen} toggleMobileNav={setIsMobileOpen}></Nav>
+        <div onClick={() => isMobileOpen && setIsMobileOpen(false)}>
+          <Hero></Hero>
+          {children}
+        </div>
       </body>
     </html>
-  )
+  );
 }
