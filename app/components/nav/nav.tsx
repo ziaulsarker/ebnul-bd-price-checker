@@ -12,7 +12,7 @@ function Nav() {
       const targetElement = e.target
       const mobileNav = document.querySelector(".mobile");
       if (targetElement != mobileNav ) {
-        mobileNav?.classList.toggle("show-mobile");
+        mobileNav?.classList.remove("show-mobile");
       }
     }
     body.addEventListener("click", bodyClickHandler)
@@ -20,10 +20,14 @@ function Nav() {
 
  
   
- 
+  const toggleMobileNav = (event) => {
+    event.preventDefault();
+    const mobileNav = document.querySelector(".mobile");
+    mobileNav?.classList.toggle("show-mobile")
+  };
   return (
     <nav className="nav">
-      <div className="mobile-toggle transition">
+      <div className="mobile-toggle transition" onClick={toggleMobileNav}>
         <span></span>
         <span></span>
         <span></span>
