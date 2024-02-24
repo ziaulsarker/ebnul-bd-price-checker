@@ -29,6 +29,23 @@ h1 {
     color: navajowhite;
     letter-spacing: 5px;
 }
+.pos {
+    margin-top: 50px;
+}
+
+
+
+.searchBox {
+    width: 35%;
+    height: 4.5vh;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 4px black;
+    font-size: 1.2rem;
+    padding-left: 70px;
+}
+
 
 @media (max-width: 35rem) {
     .container {
