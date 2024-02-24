@@ -18,7 +18,6 @@ export default function RootLayout({
       <body>
         <Nav isOpen={isMobileOpen} toggleMobileNav={setIsMobileOpen}></Nav>
         <div onClick={() => isMobileOpen && setIsMobileOpen(false)}>
-          <Hero></Hero>
           {children}
         </div>
       </body>
