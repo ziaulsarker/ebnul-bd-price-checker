@@ -1,20 +1,23 @@
 export const prices = {
-    Travelling: {
-      fromBabuBazartoWari: {
+    Travelling: [
+      {
+        title:"fromBabuBazartoWari",
         cost: "60 to 70 taka",
         info: "Better to take a rickshaw straight there",
         likes: "",
         reviews: [""],
         feedback: '',
       },
-      fromWaritoMultiplan: {
+      {
+        title: 'fromWaritoMultiplan',
         cost: "80 to 100 taka",
         info: "Better to take a rickshaw straight there",
         likes: " ",
         reviews: "",
         feedback: '',
       },
-      fromChunkutiaChourasthatoGulisthan: {
+     {
+      title: "fromChunkutiaChourasthatoGulisthan",
         cost:"20 to 30 taka",
         info: "Take a Bus near the Fulkoli store or for more info click on the picture",
         img:"here",
@@ -22,21 +25,24 @@ export const prices = {
         reviews: "",
         feedback: '',
       },
-      fromKodomtulitoShorifFoodCourt: {
+      {
+        title:"fromKodomtulitoShorifFoodCourt",
         cost: "20 taka",
         info: "Take a CNG from nearby",
         likes: " ",
         reviews: "",
         feedback: '',
       },
-      fromGulshan2toBangabondhuAirport: {
+      {
+
+        title: 'fromGulshan2toBangabondhuAirport',
         info:"Better take an Uber",
         cost:"According to Uber charges",
         likes: " ",
         reviews: "",
         feedback: '',
       },
-    },
+    ],
     Clothes: {
       Note: {
         note:"Some places have fixed prices and you cannot bargain there like any brands like Yellow lotto etc and its a generic idea not an actual price",

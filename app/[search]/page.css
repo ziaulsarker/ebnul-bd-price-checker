@@ -1,0 +1,28 @@
+.grid {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  grid-columns-gap: 30px;
+}
+
+.grid-item{
+  background-color: #222;
+  padding: 30px;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{ 
+
+}
+
+.info{
+
+}
+
+.likes{
+
+}
