@@ -1,45 +1,52 @@
+
 export const prices = {
     Travelling: [
        {
         title:"BabuBazar to Wari",
-        cost: "60 to 70 taka",
+        cost: "BDT- 60 to 70৳",
         info: "Better to take a rickshaw straight there",
         likes: "",
-        reviews: [""],
-        feedback: '',
+        reviews: "",
+        share: '',
+        featureImage: "/babu.jpg",
       },
        {
         title: "Wari to Multiplan",
-        cost: "80 to 100 taka",
+         featureImage: "/wari.jpg",
+        cost: "BDT- 80 to 100৳",
         info: "Better to take a rickshaw straight there",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
+        
       },
        {
         title: "Chunkutia Chourastha to Gulisthan",
-        cost:"20 to 30 taka",
+        cost:"BDT- 20 to 30৳",
         info: "Take a Bus near Fulkoli ",
         img:"here",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
+        featureImage: "/gulistan.jpg",
       },
        { 
         title: "Kodomtuli to Shorif Food Court",
-        cost: "20 taka",
+        cost: "BDT- 20৳",
         info: "Take a CNG from nearby",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
+        featureImage: "/shorif.jpg",
       },
        {
         title: "Gulshan 2 to Bangabondhu Airport",
         info:"Better take an Uber",
-        cost:"According to Uber charges",
+        cost:"BDT- According to Uber charges",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
+        featureImage: "/gulshan.jpg",
       },
     ],
     Clothes: [
@@ -52,7 +59,7 @@ export const prices = {
         cost: "around 1500 to 2000 taka ",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Shirt",
@@ -60,7 +67,7 @@ export const prices = {
         cost:"around 2000 to 3000 taka",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Saree",
@@ -68,7 +75,7 @@ export const prices = {
         cost: "around 5000 taka",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Trousers",
@@ -76,7 +83,7 @@ export const prices = {
         cost: "around 700 to 1200 taka",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title:"Suit",
@@ -84,7 +91,7 @@ export const prices = {
         cost:"around 12000 to 15000 taka",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
        },
       ]
     ,
@@ -95,7 +102,7 @@ export const prices = {
         cost: "Whatever the official brands cost",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
     ],
 
@@ -110,7 +117,7 @@ export const prices = {
         cost: "around 350 to 800",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Pizza",
@@ -118,7 +125,7 @@ export const prices = {
         cost: "around 700 to 1500",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Kacchi",
@@ -126,7 +133,7 @@ export const prices = {
         cost: "around 350 to 800",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       },
        {
         title: "Kebab",
@@ -134,7 +141,7 @@ export const prices = {
         cost: "around 200 to 500",
         likes: " ",
         reviews: "",
-        feedback: '',
+        share: '',
       }
     ]
   }
