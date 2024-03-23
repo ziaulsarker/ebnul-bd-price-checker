@@ -20,7 +20,7 @@ export default async function Home(props:any,) {
     foundData.map(({title, cost, info, likes, reviews, share, featureImage}) => (
       // eslint-disable-next-line react/jsx-key
       <div key={title} className='container1'> 
-        <img src={featureImage} className='pic'/>
+        {featureImage && <img src={featureImage} className='pic'/>}
           <div className='container2'>
              <h3 className='title'>{title}</h3>
       <div className='arrow-box'>

@@ -8,7 +8,6 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 0.1fr 0.1fr 0.1fr;
-    min-height: 100vh;
 }
 .container1{
     margin: 30px;
