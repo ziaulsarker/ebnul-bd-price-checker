@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 import "./page.css";
 import { FcLikePlaceholder } from "react-icons/fc";
 import { IoShareSocial } from "react-icons/io5";
@@ -8,7 +8,7 @@ async function GetNecesities(necesities) {
   if (!dataSearch.ok) {
     return {error:"Sorry not available"}
   }
-  return dataSearch.json() 
+  return dataSearch.json();
 }
 export default async function Home(props:any,) {
   const {params:{search},}=props
