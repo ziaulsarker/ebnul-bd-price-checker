@@ -43,9 +43,7 @@ a{
     position: absolute;
     z-index: 110;
     top: 20px;
-    right: 20px;
-    
-    
+    right: 20px;   
 }
 
 .mobile-toggle-open {
