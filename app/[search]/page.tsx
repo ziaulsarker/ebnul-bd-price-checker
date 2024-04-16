@@ -17,12 +17,12 @@ export default async function Home(props:any,) {
   
   return <div className='box'> 
     {
-    foundData.map(({title, cost, info, likes, reviews, share, featureImage}) => (
+    foundData.map(({title, cost, info, likes, reviews, share, featureImage},index) => (
       // eslint-disable-next-line react/jsx-key
       <div key={title} className='container1'> 
         {featureImage && <img src={featureImage} className='pic'/>}
           <div className='container2'>
-             <h3 className='title'>{title}</h3>
+             <h3 className={`title title-${index}`}>{title}</h3>
       <div className='arrow-box'>
         <p className='more'>More details</p>
             <div className='arrow'></div>

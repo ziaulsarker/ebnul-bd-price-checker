@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    position: relative;
-}
+
 .box{
     display: grid;
     justify-content: center;
@@ -17,6 +12,7 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     transition: all 0.45s ease;
+    position: relative;
 }
 
 
@@ -84,7 +80,9 @@
 .container1:hover {
     height: 390px;
 }
-
+.container1:hover .title-0{
+    color: #FF2400;
+}
 .container1:hover .pic{
     border-radius: 8px 8px 0px 0px;
     width: 330px;
