@@ -159,8 +159,9 @@ a{
     transition: width 0.3s;
     display: block;
 }
-.nav-Travelling{
-    background-color: aqua;
+.dc-Travelling{
+    background-color: rgb(224, 239, 245);
+    
 }
 
 @media (min-width: 768px) {

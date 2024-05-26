@@ -13,33 +13,65 @@ async function GetNecesities(necesities) {
 export default async function Home(props:any,) {
   const {params:{search},}=props
   const foundData = await GetNecesities(search);
+
+  const leftSide = foundData.filter((data, index) => index !== 2);
+
+  const rightSide = foundData.filter((data, index) => index === 2)
   
-  
-  return <div className='box'> 
+  return <div className='box'>
+    <div className="left-side"> 
     {
-    foundData.map(({title, cost, info, likes, reviews, share, featureImage},index) => (
+    leftSide.map(({title, cost, info, likes, share, featureImage},index) => (
       // eslint-disable-next-line react/jsx-key
       <div key={title} className='container1'> 
-        {featureImage && <img src={featureImage} className='pic'/>}
-          <div className='container2'>
-             <h3 className={`title title-${index}`}>{title}</h3>
-      <div className='arrow-box'>
-        <p className='more'>More details</p>
-            <div className='arrow'></div>
-      </div>
+          {featureImage && <img src={featureImage} className='pic'/>}
+            <div className='container2'>
+              <h3 className={`title title-${index}`}>{title}</h3>
+          <div className='arrow-box'>
+          <p className='more'>More details</p>
+              <div className='arrow'></div>
+          </div>
 
-      </div>
-        <div className='rest'>
-            <div className='duo'>
-            <p className='info'>{info}</p>
-              <p className='cost'>{cost}</p>
-            </div>
-          <div className='duo1'>
-              <p className='likes'>{likes}<FcLikePlaceholder/></p>
-              <p className='share'>{share}<IoShareSocial/></p>
-            </div>
+          </div>
+          <div className='rest'>
+              <div className='duo'>
+              <p className='info'>{info}</p>
+                <p className='cost'>{cost}</p>
+              </div>
+            <div className='duo1'>
+                <p className='likes'>{likes}<FcLikePlaceholder/></p>
+                <p className='share'>{share}<IoShareSocial/></p>
+              </div>
       </div>
       </div>
     )
-    )}</div>;
+    )}</div>
+    <div className="right-side">
+    {
+    rightSide.map(({title, cost, info, likes, share, featureImage},index) => (
+      // eslint-disable-next-line react/jsx-key
+      <div key={title} className='container1'> 
+          {featureImage && <img src={featureImage} className='pic'/>}
+            <div className='container2'>
+              <h3 className={`title title-${index}`}>{title}</h3>
+          <div className='arrow-box'>
+          <p className='more'>More details</p>
+              <div className='arrow'></div>
+          </div>
+
+          </div>
+          <div className='rest'>
+              <div className='duo'>
+              <p className='info'>{info}</p>
+                <p className='cost'>{cost}</p>
+              </div>
+            <div className='duo1'>
+                <p className='likes'>{likes}<FcLikePlaceholder/></p>
+                <p className='share'>{share}<IoShareSocial/></p>
+              </div>
+      </div>
+      </div>
+    )
+    )}</div> 
+   </div>;
 } 

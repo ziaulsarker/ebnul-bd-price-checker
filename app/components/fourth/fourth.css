@@ -4,20 +4,21 @@
     align-items: center;
     background-color: bisque;
     height: 80vh;
-    gap: 100px;
     padding-bottom: 200px;
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 50% 80%, 0 100%);
+    gap: 200px;
 }
 .fourth-container:before {
     content: '';
     position: absolute;
     margin-left: 79px;
-    margin-top: 100px;
+    margin-top: 110px;
     transform: translate(-50%,-50%) rotate(135deg);
     border-top: 80px solid black;
     border-left: 80px solid white;
     box-shadow: 0px 0px 0px 2px;
     animation: rotate 6s linear infinite;
+    z-index: 1;
   }
 
   @keyframes rotate {
@@ -30,13 +31,14 @@
 }
 
 .background {
-    background-color: grey; /* Change the color as desired */ 
+    background-color: antiquewhite;
+    overflow: hidden;
 }
 
 .vl {
     border-right: 3px solid black;
     height: 78vh;
-    margin-left: 98px;
+    position: absolute;
 }
 
 .des{
@@ -46,10 +48,19 @@
     text-align: center;
     max-width: 400px;
     margin-left: 286px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ni{
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .pg{
     margin-left: 90px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.6fr;
+    margin-top: 50px;
 }
 
 .circle {
@@ -57,7 +68,7 @@
     width: 360px;
     border-radius: 60%;
     box-shadow: 3px 2px 13px 2px;
-    margin-left: 135px 
+    
 }
 
 .birb {
@@ -65,9 +76,9 @@
     width: 240px;
     border-radius: 60%;
     box-shadow: 0px 1px 13px 1px;
-    position: absolute;
-    margin-top: 40px;
-    
+    overflow: hidden;
+    position: relative;
+    right: -160px;
 }
 .boat {
     height: 200px;
@@ -75,6 +86,57 @@
     border-radius: 60%;
     box-shadow: 0px 1px 13px 1px;
     position: relative;
-    right: 80px;
-    top: 40px;
+    overflow: hidden;
+    top: 190px;
+    right: 65px;
+}
+
+@media (max-width: 768px) {
+    .circle{
+        height: 250px;
+        width: 260px;
+        margin-left: 0px;
+    }
+    .birb{
+        height: 70px;
+        width: 140px;
+    }
+    .boat{
+        height: 100px;
+        width: 100px;
+    }
+    .des{
+        margin-left: 0px;
+    }
+    .pg{
+        margin-left: 0px;
+    }
+    .fourth-container{
+        gap: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .circle{
+        height: 250px;
+        width: 260px;
+        margin-left: 0px;
+    }
+    .birb{
+        height: 70px;
+        width: 140px;
+    }
+    .boat{
+        height: 100px;
+        width: 100px;
+    }
+    .des{
+        margin-left: 0px;
+    }
+    .pg{
+        margin-left: 0px;
+    }
+    .fourth-container{
+        gap: 0px;
+    }
 }

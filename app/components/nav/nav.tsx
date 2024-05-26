@@ -9,7 +9,7 @@ function Nav(props) {
   const {search} = useParams()
   console.log(search)
   return (
-    <nav className={`nav nav-${search}`}>
+    <nav className="nav">
       <div
         className={`mobile-toggle ${isOpen && "mobile-toggle-open"}`}
         onClick={() => toggleMobileNav(!isOpen)}
@@ -28,7 +28,7 @@ function Nav(props) {
       </div>
 
       <div className="desktop">
-        <div className="dc">
+        <div className={`dc dc-${search}`}>
         <Link href="#">Discover</Link>
         <Link href="#">Travelling</Link>
         <Link href="#">Electronics</Link>
