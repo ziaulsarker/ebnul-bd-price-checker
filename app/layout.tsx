@@ -3,16 +3,15 @@
 import "./globals.css";
 import Nav from "./components/nav/nav";
 import Hero from "./components/hero/hero";
-
 import { useEffect, useState } from "react";
 
 export default function RootLayout({
-  children,
+  children, 
 }: {
   children: React.ReactNode;
 }) {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
-
+  
   return (
     <html lang="en">
       <body>

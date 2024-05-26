@@ -1,3 +1,8 @@
+.background-container{
+    background-color: bisque;
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -6,16 +11,21 @@
     background-image: url(bd.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 70vh;
-    z-index: -1;
-    position:fixed;
+    height: 97vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); 
 }
 
 
 
-h1 {
+.c2{
+    margin-bottom: 135px;
+}
+.adjust{
+    margin-top: 30px;
+}
+
+.heading {
     font-size: 80px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: antiquewhite;
@@ -29,9 +39,7 @@ h1 {
     color: navajowhite;
     letter-spacing: 5px;
 }
-.pos {
-    margin-top: 50px;
-}
+
 
 
 
@@ -47,8 +55,3 @@ h1 {
 }
 
 
-@media (max-width: 35rem) {
-    .container {
-        height: 65vh;
-    }
-}
