@@ -11,9 +11,7 @@ export default function Home() {
   <Hero></Hero>
   <Fourth></Fourth>
   <Fifth></Fifth>
-  <Fifth></Fifth>
-  <Sixth></Sixth>
-  
+  <Fifth isLeftAligned={true}></Fifth>
  </div>
   )
 }
